@@ -1,2 +1,2 @@
 # Resume
-My resume!
+My resume in both pdf and tex formats.
