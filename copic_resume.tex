@@ -1,0 +1,178 @@
+\documentclass[12pt]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{verbatim}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Christian Copic}}\\
+	copic@email.arizona.edu $\cdot$ 480-721-2440\\
+	\begin{comment}$\cdot$ github.com\end{comment} 
+\end{center}
+
+%==== Education ====%
+\header{education}
+\textbf{The University of Arizona}\hfill Tucson, AZ\\
+B.S. Electrical \& Computer Engineering - GPA: 4.0
+\hfill August 2019 - May 2023\\
+Minor in Statistics \& Data Science
+
+
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Work Experience}
+\vspace{1mm}
+
+\textbf{Micron Technology} \hfill Boise, ID\\
+\textit{DRAM Product Engineer Intern} \hfill May 2021 - August 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Provided a reliability assessment of new High Performance CMOS devices in LPDDR5 memory
+	\item Created an improved python script to parse through the reliability data that was 28 times faster with a better algorithm for transistor fail detection
+	\item Leveraged JMP to create Weibull plots to analyze parsed data and verify that the new CMOS technology would last Micron's product warranty
+\end{itemize}
+
+\textbf{The University of Arizona - Physics Department} \hfill Tucson, AZ\\
+\textit{Preceptor for Physics E\&M} \hfill Jan 2021 - May 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\vspace{-2mm}
+
+	\item Managed 25 students on a weekly basis as they completed their discussion worksheets
+	\item Taught students basic electricity and magnetism concepts, corrected any misconceptions, and improved their problem solving skills 
+	\item Collaborated with graduate students to grade the students' worksheets 
+\end{itemize}
+
+
+%%%%Club Work%%%
+\header{Clubs}
+\vspace{1mm}
+
+\textbf{Formula Society of Automotive Engineers} \hfill Tucson, AZ\\
+\textit{Electronics Subteam - Wiring Harness Lead} \hfill August 2019 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\item Transitioned the car to a brand new ECU and assisted in tuning the engine 
+	\item Created an excel document to help categorize  the pin-outs and purposes of all the wires
+	\item Built a layout of the car's harness in Rapid Harness to have a digital documentation of how the whole assembly connects together
+\end{itemize}
+
+
+
+%%%%Covid Projects%%%
+\header{Covid Projects}
+\vspace{1mm}
+
+\begin{comment}
+\textbf{Evaluation of STEM Degree Value} \hfill Spring 2021\\
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\item Using publicly available data, I employed a hypothesis test to assess whether or not STEM majors earn a higher starting salary than Non-STEM majors
+	\item Created a scatter plot with a regression line in R to see if there was a correlation between number of hours studying per week and starting median pay for new college graduates
+\end{itemize}
+\end{comment}
+
+\textbf{Stock Analyzer} \hfill Summer 2020\\
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\item Built a stock analyzer in Python that would web scrape for stocks that met several valuation measures set by the user
+	\item Exported the stocks into an excel file along with a link to the most recent 10-K report for further review
+\end{itemize}
+
+
+
+\header{Skills}
+\begin{tabular}{ l l }
+	Programming Languages: C \& C++, Python, Java, Verilog \\
+	Statistical Tools: Python, R, JMP\\
+	Software: Microsoft Office, Vivado, PSpice, Linux/Unix systems
+\end{tabular}
+\vspace{2mm}
+
+
+
+\begin{comment}
+\header{Projects}
+{\textbf{Project Name}} {\sl C++} \hfill link\\
+Description\\
+\vspace*{2mm}
+
+\header{Awards}
+\textbf{Name} \hfill Awarder\\
+Summary haoeusnhtaeohueo buheh ueoc uhaeot uhhseo \hfill date\\
+\vspace*{2mm}
+
+\
+\end{comment}
+
+\
+\end{document}
